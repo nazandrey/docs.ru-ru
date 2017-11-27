@@ -95,12 +95,12 @@ caps.handback.revision: 47
   
 |Значение параметра <xref:System.Threading.Tasks.TaskCreationOptions>|Описание|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Значение по умолчанию, если параметр не задан.  Планировщик использует его эвристику по умолчанию для планирования задачи.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Указывает, что задачу необходимо планировать так, чтобы созданные раньше задачи выполнялись раньше, а более поздние задачи — позже.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Указывает, что задача представляет длительную операцию.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Указывает, что задача должна быть создана как вложенная дочерняя задача текущей задачи, если таковая существует.  Дополнительные сведения см. в разделе [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Указывает, что, если внутренняя задача определяет параметр `AttachedToParent`, эта задача не станет дочерней присоединенной задачей.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Указывает, что планировщик задач для задач, созданных вызывающими методами \(например, <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> или <xref:System.Threading.Tasks.Task%601.ContinueWith%2A?displayProperty=fullName>\) из определенной задачи, — это планировщик по умолчанию, а не планировщик, в котором выполняется эта задача.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.None>|Значение по умолчанию, если параметр не задан.  Планировщик использует его эвристику по умолчанию для планирования задачи.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.PreferFairness>|Указывает, что задачу необходимо планировать так, чтобы созданные раньше задачи выполнялись раньше, а более поздние задачи — позже.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.LongRunning>|Указывает, что задача представляет длительную операцию.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent>|Указывает, что задача должна быть создана как вложенная дочерняя задача текущей задачи, если таковая существует.  Дополнительные сведения см. в разделе [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach>|Указывает, что, если внутренняя задача определяет параметр `AttachedToParent`, эта задача не станет дочерней присоединенной задачей.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.HideScheduler>|Указывает, что планировщик задач для задач, созданных вызывающими методами \(например, <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> или <xref:System.Threading.Tasks.Task%601.ContinueWith%2A?displayProperty=fullName>\) из определенной задачи, — это планировщик по умолчанию, а не планировщик, в котором выполняется эта задача.|  
   
  Параметры можно объединить с использованием побитовой операции **OR**.  В следующем примере показана задача с параметрами <xref:System.Threading.Tasks.TaskCreationOptions> и <xref:System.Threading.Tasks.TaskContinuationOptions>.  
   
